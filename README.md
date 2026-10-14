@@ -1,7 +1,7 @@
 ## Meu portfólio — protótipo inicial ##
 
 # Link para o site: 
-meu-portfolio-gpierazolli.vercel.app
+portfolio-two-coral-64.vercel.app
 
 # Sobre o projeto
 Este projeto consiste em um portfólio pessoal desenvolvido para apresentar minhas informações profissionais, projetos, experiências e tecnologias utilizadas ao longo da minha trajetória acadêmica e profissional.
