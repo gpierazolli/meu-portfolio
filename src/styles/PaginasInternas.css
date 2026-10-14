@@ -1,0 +1,143 @@
+
+.pagina-interna {
+  min-height: 100vh;
+  padding: 120px 7% 70px;
+  background-color: #f8f7f4;
+  color: #263044;
+}
+
+.voltar {
+  display: inline-block;
+  margin-bottom: 35px;
+  color: #248ed0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.pagina-interna h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin: 10px 0;
+}
+
+.pagina-interna h1 span {
+  color: #21cfce;
+}
+
+.eyebrow {
+  color: #248ed0;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.pastas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+  margin-top: 45px;
+}
+
+.pasta-card {
+  display: block;
+  padding: 25px;
+  background: white;
+  border: 2px solid #e5e5e5;
+  border-radius: 16px;
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.pasta-card:hover {
+  transform: translateY(-5px);
+  border-color: #21cfce;
+}
+
+.pasta-icone {
+  font-size: 35px;
+}
+
+.pasta-card h2 {
+  font-size: 1.2rem;
+}
+
+.pasta-card span {
+  color: #248ed0;
+  font-weight: bold;
+}
+
+.detalhe-pasta {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 30px;
+  background: white;
+  border-radius: 18px;
+}
+
+.imagem-reservada {
+  min-height: 220px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 30px;
+  background: #e9f7f8;
+  border: 2px dashed #21cfce;
+  border-radius: 12px;
+  color: #526579;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tags span {
+  padding: 8px 12px;
+  background: #dff8f7;
+  border-radius: 20px;
+}
+
+/* Páginas internas alinhadas à identidade visual da página inicial */
+.pagina-interna {
+  position: relative;
+  isolation: isolate;
+  background-color: #fbfaf8;
+  background-image: linear-gradient(#dedbd8 1px, transparent 1px), linear-gradient(90deg, #dedbd8 1px, transparent 1px);
+  background-size: 28px 28px;
+  background-position: center top;
+  padding: 120px max(7%, calc((100% - 1120px) / 2)) 90px;
+}
+.pagina-interna > h1, .pagina-interna > p, .pagina-interna > .eyebrow { max-width: 850px; }
+.pagina-interna > h1 { font-family: var(--display); letter-spacing: -.055em; line-height: 1.05; }
+.pagina-interna > h1 span, .pagina-interna h1 span { color: var(--aqua); }
+.voltar {
+  display: inline-flex; align-items: center; gap: 8px; margin-bottom: 38px;
+  padding: 12px 17px; border-radius: 7px; color: #102c39; background: var(--blue);
+  font-size: 13px; font-weight: 700; transition: transform .2s, background .2s;
+}
+.voltar:hover { background: #55c1f3; transform: translateY(-2px); }
+.pagina-interna > p:not(.eyebrow) { color: var(--muted); line-height: 1.75; }
+.pasta-card {
+  position: relative; overflow: hidden; padding: 27px; background: #fff;
+  border: 1px solid #e7e4e1; border-radius: 10px; box-shadow: 5px 5px 0 #29a9e817;
+  transition: transform .22s, border-color .22s, box-shadow .22s;
+}
+.pasta-card::before { content: ''; position: absolute; inset: 0 auto auto 0; width: 100%; height: 5px; background: linear-gradient(90deg, var(--blue), var(--aqua), var(--pink)); }
+.pasta-card:hover { transform: translateY(-6px); border-color: var(--aqua); box-shadow: 7px 9px 0 #29a9e81c; }
+.pasta-icone { display: inline-grid; place-items: center; width: 52px; height: 52px; border-radius: 12px; background: #e5f7ff; font-size: 27px; }
+.pasta-card h2 { margin: 18px 0 10px; font-size: 1.35rem; }
+.pasta-card p { min-height: 48px; color: var(--muted); line-height: 1.6; font-size: .92rem; }
+.pasta-card span { display: inline-flex; margin-top: 10px; padding-top: 14px; border-top: 1px solid var(--line); width: 100%; }
+.detalhe-pasta { max-width: 920px; padding: clamp(22px, 4vw, 46px); background: #fff; border: 1px solid var(--line); border-radius: 12px; box-shadow: 8px 8px 0 #23d5cf24; }
+.detalhe-pasta h1 { font-family: var(--display); letter-spacing: -.055em; }
+.detalhe-pasta h2 { margin: 28px 0 12px; font-size: clamp(1.3rem, 2.5vw, 1.8rem); }
+.detalhe-pasta p { color: #65636b; line-height: 1.8; }
+.detalhe-imagem { display: block; width: 100%; max-height: 430px; object-fit: contain; background: #f4f7f8; border-radius: 9px; margin-bottom: 30px; }
+.experiencia-imagem { max-height: 320px; object-fit: cover; }
+.tags { margin-top: 16px; }
+.tags span { color: #16475c; background: #e5f7ff; border: 1px solid #c7ebfa; font-size: .85rem; font-weight: 600; }
+@media (max-width: 700px) {
+ .pagina-interna { padding: 100px 18px 55px; }
+ .voltar { margin-bottom: 28px; }
+ .pastas-grid { gap: 18px; margin-top: 30px; }
+ .detalhe-pasta { padding: 20px; }
+}
